@@ -9,47 +9,59 @@
              >
     <!--<ContentPage.Resources>
         <ControlTemplate x:Key="Default">-->
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0.085*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="0.050*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition  Width="1*"/>
-                </Grid.ColumnDefinitions>
-                <Image
-            Grid.Row="0"
-            BackgroundColor="Black"
-            Source="{models:EmbeddedImage ResourceId=Feequesta.Assets.Images.ender.png}" />
-                <!--<StackLayout
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.085*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="0.24*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout
             Grid.Row="0"
             Orientation="Horizontal"
             >
-            <Label
-                Text="Header Text"
+                <Label
+                Text="header text"
                 FontSize="24"
                 FontAttributes="Bold"
                 TextColor="Black"
                 VerticalOptions="Center"
                 HorizontalOptions="Start"
                 Margin="10,0,0,0"
-            />
-            <Label
-                Text="Commit Text"
+                />
+                <Label
+                Text="commit text"
                 FontSize="14"
                 FontAttributes="Bold"
-                TextColor="Black"
+                TextColor="black"
                 VerticalOptions="EndAndExpand"
                 HorizontalOptions="EndAndExpand"
                 Margin="0,0,10,0"
-            />
-        </StackLayout>-->
-                <ContentPresenter Grid.Row="1"/>
-                <StackLayout Grid.Row="2">
-
-                </StackLayout>
-            </Grid>
-        </ControlTemplate>
-    </ContentPage.Resources>
+                />
+            </StackLayout>
+            <StackLayout Grid.Row="1"></StackLayout>
+            <!--<ContentPresenter Grid.Row="1"/>-->
+            <RelativeLayout
+                Grid.Row="2"
+                >
+                <Image
+                BackgroundColor="Transparent"
+                Aspect="Fill"
+                TranslationX="0"
+                TranslationY="-10"
+                Source="{models:EmbeddedImage ResourceId=Feequesta.Assets.Images.ender.png}"
+                />
+                <Image
+                TranslationX="165"
+                TranslationY="45"
+                Source="{models:EmbeddedImage ResourceId=Feequesta.Assets.Images.logo32.png}"
+                />
+            </RelativeLayout>
+        </Grid>
+    </ContentPage.Content>
+    <!--</ControlTemplate>
+    </ContentPage.Resources>-->
 </ContentPage>

@@ -1,4 +1,5 @@
-﻿using Feequesta.Views;
+﻿using Feequesta.Elements.Views;
+using Feequesta.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace Feequesta
         {
             InitializeComponent();
 
-            MainPage = new LoginPage();
+            MainPage = new HeaderAndFooterPager();
         }
 
         protected override void OnStart()
